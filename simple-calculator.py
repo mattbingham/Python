@@ -1,13 +1,13 @@
 __author__ = "Matt Bingham"
 __email__ = "mattbingham@outlook.com"
 
-no1 = int(input("Enter a number > "))
+no1 = float(input("Enter a number > "))
 fn1 = str(input("""Enter a function: 
 Press 1 for +
 Press 2 for -
 Press 3 for *
 Press 4 for /\n> """))
-no2 = int(input("Enter a number > "))
+no2 = float(input("Enter a number > "))
 
 if fn1 == "1":
 	tot = no1 + no2
