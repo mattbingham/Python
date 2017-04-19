@@ -11,6 +11,5 @@ TODO
 """
 
 import random 
-
 dice = random.randint(1,6)
-user = print("You rolled a {}".format(dice))
+output = print("You rolled a {}".format(dice))
