@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+"""Simple user input and calculation"""
 __author__ = "Matt Bingham"
 __email__ = "mattbingham@outlook.com"
 
