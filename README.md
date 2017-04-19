@@ -3,4 +3,7 @@ Python training, I'm learning the Python programming language at the moment. I'l
 
 ## Scripts
 - `dog-owner.py` - Add a dog and dog tag. Associate dog with an owner.
+
+- `miles-km-conversion.py` - Allows user to choose a conversion of value from km to miles or miles to km.
+
 - `simple-calulator.py` - Takes two number inputs and calculates them according to another user input.
