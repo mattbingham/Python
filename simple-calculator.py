@@ -1,7 +1,5 @@
-"""
-Author: M. Bingham
-Description: Creates a simple calculation with user input
-"""
+__author__ = "Matt Bingham"
+__email__ = "mattbingham@outlook.com"
 
 no1 = int(input("Enter a number > "))
 fn1 = str(input("""Enter a function: 

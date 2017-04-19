@@ -1,7 +1,7 @@
-"""
-Author: M. Bingham
-Description: Allows users to input dogs and owners
-"""
+#!/usr/bin/env python
+"""Adds a dog and dogs owner information"""
+__author__ = "Matt Bingham"
+__email__ = "mattbingham@outlook.com"
 
 class Dog():
 	"""Adds a dog and collar tag"""
