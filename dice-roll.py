@@ -13,3 +13,15 @@ TODO
 import random 
 dice = random.randint(1,6)
 output = print("You rolled a {}".format(dice))
+
+user = input("Roll again? Y or N > ").lower()
+if user == "y":
+	number_rolls = 1
+	user = input("Roll again? Y or N > ").lower()
+	while number_rolls != 0:
+		output = print("You rolled a {}".format(dice))
+		user = input("Roll again? Y or N > ").lower()
+		if user != "y":
+			print("Bye bye!")
+		number_rolls -= 1
+	
