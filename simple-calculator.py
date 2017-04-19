@@ -1,0 +1,25 @@
+"""
+Author: M. Bingham
+Description: Creates a simple calculation with user input
+"""
+
+no1 = int(input("Enter a number > "))
+fn1 = str(input("""Enter a function: 
+Press 1 for +
+Press 2 for -
+Press 3 for *
+Press 4 for /\n> """))
+no2 = int(input("Enter a number > "))
+
+if fn1 == "1":
+	tot = no1 + no2
+elif fn1 == "2":
+	tot = no1 - no2
+elif fn1 == "3":
+	tot = no1 * no2
+elif fn1 == "4":
+	tot = no1 / no2
+else:
+	tot = "You did not enter a valid function."
+
+print(tot)
