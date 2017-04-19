@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""A random numbe from 1 - 6 is generated"""
+"""A random number from 1 - 6 is generated"""
 __author__ = "Matt Bingham"
 __email__ = "mattbingham@outlook.com"
 
