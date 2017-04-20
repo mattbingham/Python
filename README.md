@@ -1,5 +1,12 @@
+<p align="center">
+    <a href="https://github.com/mattbingham/Python">
+        <img src="https://img.shields.io/badge/Training-Ongoing-orange.svg"
+             alt="Matt Bingham Python Training">
+    </a>
+</p>
+
 # Python
-Python training, I'm learning the Python programming language at the moment. I'll be adding scripts here as I have new ideas for them. I do not (currently) consider myself a programmer, I'm creating these small programs to solve a problem for myself. If you have any comments or suggestions I would love to hear them - mattbingham@outlook.com.
+I'm learning the Python programming language at the moment. I'll be adding scripts here as I have new ideas for them. I do not (currently) consider myself a programmer, I'm creating these small programs to solve a problem for myself. If you have any comments or suggestions I would love to hear them - mattbingham@outlook.com.
 
 ## Scripts
 
