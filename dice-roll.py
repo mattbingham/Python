@@ -1,25 +1,25 @@
 #!/usr/bin/env python
-"""A random number from 1 - 6 is generated"""
+"""A random number from 1 - 6 is generated with x number of dice"""
 __author__ = "Matt Bingham"
 __email__ = "mattbingham@outlook.com"
 
 import random 
 
-dice = random.randint(1,6)
-choice = "y"
+#Vars
 decorate = "=" * 20
+question = int(input("How many dice do you want to roll? > "))
 
-# First roll
-output = print("You rolled a {}".format(dice))
+def dice_list(i):
+	lst = []
+	count = 1
+	while i != 0:
+		roll = random.randint(1, 6)
+		lst.append(roll)
+		print("Roll {}: {}".format(count, lst))
+		print(decorate)
+		i -= 1
+		count += 1
 
-# Ask user if they want to roll again
-while choice == "y":
-	choice = input("Roll again? Y or N > ").lower()
-	print(decorate)
-	if choice not in ("y", "n"):
-		print("Sorry I didn't understand that.")
-	elif choice == "y":
-		dice = random.randint(1,6)
-		output = print("You rolled a {}".format(dice))
-	else:
-		print("Au revoir!")
+#Ask
+print(question)
+dice_list(question)
