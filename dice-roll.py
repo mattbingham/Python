@@ -3,25 +3,23 @@
 __author__ = "Matt Bingham"
 __email__ = "mattbingham@outlook.com"
 
-"""
-TODO
-- User input
--- How many dice need rolling?
--- Generate if loop for each dice of input given 
-"""
-
 import random 
+
 dice = random.randint(1,6)
+choice = "y"
+decorate = "=" * 20
+
+# First roll
 output = print("You rolled a {}".format(dice))
 
-user = input("Roll again? Y or N > ").lower()
-if user == "y":
-	number_rolls = 1
-	user = input("Roll again? Y or N > ").lower()
-	while number_rolls != 0:
+# Ask user if they want to roll again
+while choice == "y":
+	choice = input("Roll again? Y or N > ").lower()
+	print(decorate)
+	if choice not in ("y", "n"):
+		print("Sorry I didn't understand that.")
+	elif choice == "y":
+		dice = random.randint(1,6)
 		output = print("You rolled a {}".format(dice))
-		user = input("Roll again? Y or N > ").lower()
-		if user != "y":
-			print("Bye bye!")
-		number_rolls -= 1
-	
+	else:
+		print("Au revoir!")
