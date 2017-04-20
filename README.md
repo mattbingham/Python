@@ -27,3 +27,16 @@ I'm learning the Python programming language at the moment. I'll be adding scrip
 - `number-guess.py` - User guesses random number. Feedback states higher or lower.
 
 - `story-generator.py` - Accepts several user inputs and prints pre-defined story using this input.
+
+## Things I need to learn
+I need to learn alot - I know that, but I've also already learnt alot! Coding doesn't come naturally to me but I love it when a tutorial or fact sticks and I can recall it without having to go back to a book or website. As well as listing coding items I need to learn, I thought it would be useful to list ideas, best practices and more - everything that can help me be a better programmer.
+
+### Code stuff
+
+- Classes. I can work with def but have a few problems when trying to call them inside of classes
+- GUI / web app. I am great at asking for user input on cmd line but how do I put all of this into a GUI or web app?
+
+### Other stuff
+
+- Best practices for OOP
+- Scaffolding to help build web applications (my main aim)
