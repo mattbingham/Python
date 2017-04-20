@@ -4,7 +4,7 @@ Python training, I'm learning the Python programming language at the moment. I'l
 ## Scripts
 
 ### Completed scripts
-- `dice-roll.py` - A random number from 1 - 6 is generated. User is asked if another roll is required.
+- `dice-roll.py` - A random number from 1 - 6 is generated. User is asked how many rolls are required and each roll is shown in output.
 
 - `dog-owner.py` - Add a dog and dog tag. Associate dog with an owner.
 
