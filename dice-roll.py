@@ -15,10 +15,11 @@ def dice_list(i):
 	while i != 0:
 		roll = random.randint(1, 6)
 		lst.append(roll)
-		print("Roll {}: {}".format(count, lst))
+		print("Roll {}: {}".format(count, lst[count-1]))
 		print(decorate)
 		i -= 1
 		count += 1
+	print("Your total rolls are", lst)
 
 #Ask
 print(question)
