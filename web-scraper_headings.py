@@ -6,6 +6,8 @@ __email__ = "mattbingham@outlook.com"
 
 """In order to use this script, you'll need to:
 pip install beautifulsoup4
+
+Work needed: Validation for incorrect input and no header return text
 """
 
 import requests
@@ -23,7 +25,7 @@ html_content = r.text
 soup = BeautifulSoup(html_content, 'lxml')
 
 print(decoration)
-print("Heading for page:\n{}".format(soup.title.string))
+print("Page Heading:\n{}".format(soup.title.string))
 
 user = input("""
 	Which title would you like to print? :
@@ -44,4 +46,4 @@ print(decoration)
 print("{} headers:\n-----------".format(user))
 for i in h:
 	print(i.get_text())
-print(decoration)
+	
