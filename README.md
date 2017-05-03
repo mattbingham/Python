@@ -23,6 +23,8 @@ I'm learning the Python programming language at the moment. I'll be adding scrip
 
 - `simple-calulator.py` - Takes two number inputs and calculates them according to another user input.
 
+- `web-scraper_headings.py` - Finds all headings on a user inputted url. Initial commit complete however needs a lot of cleaning up and error correction.
+
 ### Script ideas (work in progress)
 - `adventure-game.py` - Simple text based game whereby user has to get home.
 
@@ -32,7 +34,6 @@ I'm learning the Python programming language at the moment. I'll be adding scrip
 
 - `story-generator.py` - Accepts several user inputs and prints pre-defined story using this input.
 
-- `web-scraper_headings.py` - Finds all headings on a user inputted url
 
 - `web-scraper_links.py` - Finds all links (and attributed link text) headings on a user inputted url
 
