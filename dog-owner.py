@@ -2,12 +2,13 @@
 """Adds a dog and dogs owner information"""
 __author__ = "Matt Bingham"
 __email__ = "mattbingham@outlook.com"
+__copyright__ = "Borrowed and ammended from the Self Taught Programmer by Cory Althoff"
 
 class Dog():
 	"""Adds a dog and collar tag"""
-	def __init__(self, name, tag, owner):
+	def __init__(self, name, breed, owner):
 		self.name = name
-		self.tag = tag
+		self.breed = breed
 		self.owner = owner
 
 class Owner():
@@ -15,11 +16,10 @@ class Owner():
 	def __init__(self, name):
 		self.name = name
 
-owner1 = input("Enter your name > ")
-dog1name = input("Enter your dogs name > ")
-dog1tag = input("Enter your dogs tag > ")
+own_name	= input("What's your name? > ")
+dog_name 	= input("What's your dog's name? > ")
+dog_breed	= input("What's your dog's breed? > ")
+owns 		= Owner(own_name)
+dogs		= Dog(own_name, dog_breed, owns)
 
-print("""
-	  Dog: {} | ID: {} 
-	  Owner: {}
-	  """.format(dog1name, dog1tag, owner1))
+print("The owner of", dog_name, "the", dogs.breed, "is", dogs.owner.name)
