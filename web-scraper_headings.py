@@ -49,3 +49,11 @@ print("{} headers:\n-----------".format(user))
 for i in h:
 	print(i.get_text())
 	
+
+print("""
+Find links headings or paragraphs?
+Press 1 for links
+Press 2 for headings
+Press 3 for paragraphs
+""")
+a = soup.find_all('a')[0:5]
