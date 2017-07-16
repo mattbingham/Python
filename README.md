@@ -22,7 +22,7 @@ Hi, my name's Matt and I'm learning the Python programming language. I've read a
 _These are working but need some re-factoring to tidy things up.
 - `dice-roll.py` - A random number from 1 - 6 is generated. User is asked how many rolls are required and each roll is shown in output.
 
-- `dog-owner.py` - Add a dog with associated dog tag, then add the owner of the dog.
+- `dog-owner.py` - Add a dog of a particular breed, then associate owner of the dog.
 
 - `miles-km-conversion.py` - Allows user to choose a conversion from km to miles or miles to km.
 
