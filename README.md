@@ -4,11 +4,7 @@
              alt="Matt Bingham Python Training">
     </a>
     <a href="https://www.python.org/">
-        <img src="https://img.shields.io/badge/Python-3.5.2-green.svg"
-             alt="Matt Bingham Python Training">
-    </a>
-    <a href="https://www.python.org/">
-        <img src="https://img.shields.io/badge/Python-3.6.2-green.svg"
+        <img src="https://img.shields.io/badge/Python-3.5>-green.svg"
              alt="Matt Bingham Python Training">
     </a>
 </p>
@@ -19,7 +15,7 @@ Hi, my name's Matt and I'm learning the Python programming language. I've read a
 ## Scripts
 
 ### Completed scripts
-_These are working but need some re-factoring to tidy things up.
+_These are working but need some re-factoring to tidy things up_
 - `dice-roll.py` - A random number from 1 - 6 is generated. User is asked how many rolls are required and each roll is shown in output.
 
 - `dog-owner.py` - Add a dog of a particular breed, then associate owner of the dog.
