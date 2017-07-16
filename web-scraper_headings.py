@@ -27,33 +27,33 @@ html_content = r.text
 soup = BeautifulSoup(html_content, 'lxml')
 
 print(decoration)
-print("Page Heading:\n{}".format(soup.title.string))
 
-user = input("""
-	Which title would you like to print? :
-	Press 1 for all h1 headings
-	Press 2 for all h2 headings
-	Press 3 for all h3 headings
-	Press 4 for all h4 headings
-	Press 5 for all h5 headings
-	""")
-
-# Save BS heading string for heading number
-user = "h{}".format(user)
-
-# Save heading number to BS search
-h = soup.find_all(user)
-
-print(decoration)
-print("{} headers:\n-----------".format(user))
-for i in h:
-	print(i.get_text())
-	
-
-print("""
+user = int(input("""
 Find links headings or paragraphs?
 Press 1 for links
 Press 2 for headings
 Press 3 for paragraphs
-""")
-a = soup.find_all('a')[0:5]
+> """))
+
+if user == 1:
+	decore = "links"
+	a = soup.find_all('a')
+	for i in a:
+		print("\t", i.get_text)
+	print(a)
+elif user == 2:
+	decore = "headings"
+	h = input("{}\nPress 1 for h1 {}\nPress 2 for h2 {}\nPress 3 for h3 {}\nPress 4 for h4 {} > ".format(decoration, decore, decore, decore, decore))
+	print("{}\nPage title: \n\t{}".format(decoration, soup.title.string))
+	user = "h{}".format(h)
+	h = soup.find_all(user)
+	print(decoration, "\n{} {}:".format(user, decore))
+	for i in h:
+		print("\t", i.get_text())
+elif user == 3:
+	decore = "paragraphs"
+	n = int(input("How many paragraphs do you want to output? > "))
+	p = soup.find_all('p')[0:n]
+	print(decoration, p)
+else:
+	print("That input is not valid.")
