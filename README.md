@@ -25,6 +25,8 @@ I'm learning the Python programming language at the moment. I'll be adding scrip
 
 - `web-scraper_headings.py` - Finds all headings on a user inputted url. Initial commit complete however needs a lot of cleaning up and error correction.
 
+- `web-scraper_advanced.py` - Asks user what should be output from defined input (headings, href etc.). Functional, but needs work to cleanup.
+
 ### Script ideas (work in progress)
 - `adventure-game.py` - Simple text based game whereby user has to get home.
 
@@ -37,7 +39,6 @@ I'm learning the Python programming language at the moment. I'll be adding scrip
 
 - `web-scraper_links.py` - Finds all links (and attributed link text) headings on a user inputted url
 
-- `web-scraper_advanced.py` - Asks user what should be output from defined input (headings, href etc.)
 
 - `www_simple.py` - Displays a visual page in a web browser
 
