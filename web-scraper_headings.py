@@ -6,6 +6,8 @@ __email__ = "mattbingham@outlook.com"
 
 """In order to use this script, you'll need to:
 pip install beautifulsoup4
+pip install lxml
+pip install requests
 
 Work needed: Validation for incorrect input and no header return text
 """
