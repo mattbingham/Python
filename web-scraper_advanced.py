@@ -17,8 +17,8 @@ from bs4 import BeautifulSoup
 
 # Create a variable with the url
 url = str(input("Enter the URL you want to parse headings from: "))
+# Prettify stuff
 decoration = "=" * 20
-
 # Use requests to get the contents
 r = requests.get(url)
 # Get the text of the contents
@@ -27,13 +27,18 @@ html_content = r.text
 soup = BeautifulSoup(html_content, 'lxml')
 
 print(decoration)
-
-user = int(input("""
+question = """
 Find links headings or paragraphs?
 Press 1 for links
 Press 2 for headings
 Press 3 for paragraphs
-> """))
+> """
+user = int(input(question))
+
+# Make sure user is entering a correct number
+while user not in range(1, 4):
+	print("That input is not valid, please enter a number 1 - 4 > ")
+	user = int(input(question))
 
 """Section defines what is input input the Selection class"""
 def q(user):
@@ -41,10 +46,10 @@ def q(user):
 		a.links(user)
 	elif user == 2:
 		a.headings(user)
-	elif user == 3:
-		a.paragraphs(user)
 	else:
-		print("That input is not valid.")
+		user == 3
+		a.paragraphs(user)
+
 
 class Selection(object):
 	"""Takes the user input and selection and outputs below"""
@@ -52,19 +57,23 @@ class Selection(object):
 	def links(self, user):
 		d = "links"
 		a = soup.find_all('a')
+		print("{}\n{} for {}".format(decoration, d, url))
 		for i in a:
-			print("\t", i.get_text)
-		print(a)		
+			print("\t", i.get('href'))
 
 	def headings(self, user):
 		d = "headings"
-		h = input("{}\nPress 1 for h1 {}\nPress 2 for h2 {}\nPress 3 for h3 {}\nPress 4 for h4 {} > ".format(decoration, d, d, d, d))
+		h = input("{}Enter the heading type you want.\nPress 1 for h1 {}\nPress 2 for h2 {} and so on. > ".format(decoration, d, d))
 		print("{}\nPage title: \n\t{}".format(decoration, soup.title.string))
 		user = "h{}".format(h)
 		h = soup.find_all(user)
 		print(decoration, "\n{} {}:".format(user, d))
-		for i in h:
-			print("\t", i.get_text())
+		# If no headings found
+		if not h:
+			print("\tNo {} {} found".format(user, d))
+		else:
+			for i in h:
+				print("\t", i.get_text())
 		
 	def paragraphs(self, user):
 		d = "paragraphs"
