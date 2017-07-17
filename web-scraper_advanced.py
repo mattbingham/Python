@@ -8,8 +8,6 @@ __email__ = "mattbingham@outlook.com"
 pip install beautifulsoup4
 pip install lxml
 pip install requests
-
-Work needed: Validation for incorrect input and no header return text
 """
 
 import requests
