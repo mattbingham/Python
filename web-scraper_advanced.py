@@ -34,13 +34,14 @@ Press 2 for headings
 Press 3 for paragraphs
 > """
 user = int(input(question))
+title = "{}\nPage title: \n\t{}".format(decoration, soup.title.string)
 
 # Make sure user is entering a correct number
 while user not in range(1, 4):
 	print("That input is not valid, please enter a number 1 - 4 > ")
 	user = int(input(question))
 
-"""Section defines what is input input the Selection class"""
+"""Section defines what is input into the Selection class"""
 def q(user):
 	if user == 1:
 		a.links(user)
@@ -50,13 +51,13 @@ def q(user):
 		user == 3
 		a.paragraphs(user)
 
-
+"""Takes the user input and selection and outputs below"""
 class Selection(object):
-	"""Takes the user input and selection and outputs below"""
 
 	def links(self, user):
 		d = "links"
 		a = soup.find_all('a')
+		print(title)
 		print("{}\n{} for {}".format(decoration, d, url))
 		for i in a:
 			print("\t", i.get('href'))
@@ -64,9 +65,9 @@ class Selection(object):
 	def headings(self, user):
 		d = "headings"
 		h = input("{}Enter the heading type you want.\nPress 1 for h1 {}\nPress 2 for h2 {} and so on. > ".format(decoration, d, d))
-		print("{}\nPage title: \n\t{}".format(decoration, soup.title.string))
 		user = "h{}".format(h)
 		h = soup.find_all(user)
+		print(title)
 		print(decoration, "\n{} {}:".format(user, d))
 		# If no headings found
 		if not h:
@@ -77,9 +78,11 @@ class Selection(object):
 		
 	def paragraphs(self, user):
 		d = "paragraphs"
-		n = int(input("How many paragraphs do you want to output? > "))
-		p = soup.find_all('p')[0:n]
-		print(decoration, p)
+		# Save paragraphs in list
+		print(title)
+		print(decoration)
+		for n in soup.find_all('p'):
+			print(n.text)
 
 #Run the program
 print(user)
