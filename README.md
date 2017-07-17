@@ -22,6 +22,8 @@ _These are working but need some re-factoring to tidy things up_
 
 - `miles-km-conversion.py` - Allows user to choose a conversion from km to miles or miles to km.
 
+- `number-guess.py` - User guesses random number. Feedback states higher or lower.
+
 - `simple-calulator.py` - Takes two number inputs and calculates them according to another user input.
 
 - `web-scraper_headings.py` - Finds all headings on a user inputted url.
@@ -33,10 +35,7 @@ _These are working but need some re-factoring to tidy things up_
 
 - `hangman.py` - User has to guess radom word within x amount of tries.
 
-- `number-guess.py` - User guesses random number. Feedback states higher or lower.
-
 - `story-generator.py` - Accepts several user inputs and prints pre-defined story using this input.
-
 
 - `web-scraper_links.py` - Finds all links (and attributed link text) headings on a user inputted url
 
