@@ -30,6 +30,8 @@ _These are working but need some re-factoring to tidy things up_
 
 - `web-scraper_advanced.py` - Asks user what should be output from defined input (headings, href etc.).
 
+- 'turtle_miniproject.py' - A project completed for Udacity Full Stack Developer NanoDegree
+
 ### Script ideas (work in progress)
 - `adventure-game.py` - Simple text based game whereby user has to get home.
 
