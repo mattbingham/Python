@@ -16,6 +16,7 @@ Hi, my name's Matt and I'm learning the Python programming language. I've read a
 
 ### Completed scripts
 _These are working but need some re-factoring to tidy things up_
+
 - `dice-roll.py` - A random number from 1 - 6 is generated. User is asked how many rolls are required and each roll is shown in output.
 
 - `dog-owner.py` - Add a dog of a particular breed, then associate owner of the dog.
@@ -30,16 +31,17 @@ _These are working but need some re-factoring to tidy things up_
 
 - `web-scraper_advanced.py` - Asks user what should be output from defined input (headings, href etc.).
 
-- 'turtle_miniproject.py' - A project completed for Udacity Full Stack Developer NanoDegree
+- `turtle_miniproject.py` - A project completed for Udacity Full Stack Developer NanoDegree
+
+- `web-scraper_links.py` - Finds all links (and attributed link text) headings on a user inputted url
 
 ### Script ideas (work in progress)
+
 - `adventure-game.py` - Simple text based game whereby user has to get home.
 
 - `hangman.py` - User has to guess radom word within x amount of tries.
 
 - `story-generator.py` - Accepts several user inputs and prints pre-defined story using this input.
-
-- `web-scraper_links.py` - Finds all links (and attributed link text) headings on a user inputted url
 
 - `www_simple.py` - Displays a visual page in a web browser
 
@@ -50,6 +52,7 @@ _These are working but need some re-factoring to tidy things up_
 - `www_authentication.py` - Displays form for register or login. Login will authenicate against database 
 
 ## Things I need to learn
+
 I have much to learn to complete my goal of becoming a programmer. One thing that stuck out is the need to code things for myself - without the need for guides (but still checking around the web how to solve problems. Books and forums are great but at the moment coding doesn't come naturally to me. I love it when a tutorial or fact sticks and I can recall it without having to go back to a book or website. As well as listing coding items I need to learn, I thought it would be useful to list ideas, best practices and more - everything that can help me be a better programmer.
 
 ### Code stuff

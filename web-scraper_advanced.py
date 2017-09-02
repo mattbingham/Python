@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Get headings from the user input URL"""
+"""Get headings or links from the user input URL"""
 __author__ = "Matt Bingham"
 __email__ = "mattbingham@outlook.com"
 
@@ -14,7 +14,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # Create a variable with the url
-url = str(input("Enter the URL you want to parse headings from: "))
+url = str(input("Enter the URL you want to parse headings or links from: "))
 # Prettify stuff
 decoration = "=" * 20
 # Use requests to get the contents
