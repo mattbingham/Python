@@ -51,6 +51,8 @@ _These are working but need some re-factoring to tidy things up_
 
 - `www_authentication.py` - Displays form for register or login. Login will authenicate against database 
 
+- `txtweb` - Website that allows for input, and outputs as a simple website, ibcludong HtML standard encoding
+
 ## Things I need to learn
 
 I have much to learn to complete my goal of becoming a programmer. One thing that stuck out is the need to code things for myself - without the need for guides (but still checking around the web how to solve problems. Books and forums are great but at the moment coding doesn't come naturally to me. I love it when a tutorial or fact sticks and I can recall it without having to go back to a book or website. As well as listing coding items I need to learn, I thought it would be useful to list ideas, best practices and more - everything that can help me be a better programmer.
