@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """A random number from 1 - 6 is generated with x number of dice"""
 __author__ = "Matt Bingham"
 __email__ = "mattbingham@outlook.com"
@@ -6,24 +6,20 @@ __email__ = "mattbingham@outlook.com"
 import random
 from collections import Counter
 
-question = int(input("How many dice do you want to roll? > "))
 
-def line(length):
-	decorate = "=" * length
-	print(decorate)
+def question():
+	dice_rolls = int(input("How many dice do you want to roll? > "))
+	Dice(dice_rolls)
+	print("=" * 10)
 
 class Dice():
-	def __init__(self, i):
-		lst = []
-		count = 1
-		total = 0
-		c1 = []
-		c2 = []
-		while i != 0:
+	def __init__(self, dice_rolls):
+		lst, c1, c2, count, total = [], [], [], 1, 0
+		while dice_rolls != 0:
 			roll = random.randint(1, 6)
 			lst.append(roll)
 			print("Roll {}: {}".format(count, lst[count-1]))
-			i -= 1
+			dice_rolls -= 1
 			count += 1
 		for n in lst:
 			total = total + n
@@ -33,7 +29,7 @@ class Dice():
 		Dice.output(lst, total, c1, variations)
 
 	def output(lst, total, c1, variations):
-		line(10)
+		print("=" * 10)
 		print("STATS")
 		print("Your rolls list   :\t", lst)
 		print("Rolls total count :\t", total)
@@ -45,7 +41,5 @@ class Dice():
 			else:
 			    print(k,"rolled", v, "times.")
 
-#Ask
-print(question)
-line(10)
-Dice(question)
+if __name__ == "__main__":
+	question()
